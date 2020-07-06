@@ -11,6 +11,7 @@
     <modules>
         <module>Spring_01_BeanFactory</module>
         <module>Spring_02_Bean</module>
+        <module>Spring_03_Anno_01_Value</module>
     </modules>
 
     <dependencies>
