@@ -29,7 +29,8 @@ public class ConfigTest {
         User user = context.getBean("user", User.class);
         System.out.println(user);
 
-        DBInfo dbInfo = context.getBean("dbInfo", DBInfo.class);
-        System.out.println(dbInfo);
+        DBInfo dbInfo1 = context.getBean("dbInfo", DBInfo.class);
+        DBInfo dbInfo2 = context.getBean("dbInfo", DBInfo.class);
+        System.out.println(dbInfo1 == dbInfo2);
     }
 }

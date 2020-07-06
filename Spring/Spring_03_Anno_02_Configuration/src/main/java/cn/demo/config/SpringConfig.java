@@ -42,6 +42,8 @@ public class SpringConfig {
     }
 
     @Bean
+    //@Scope("singleton")
+    @Scope("prototype")
     public DBInfo dbInfo(){
         return new DBInfo();
     }
