@@ -14,7 +14,7 @@ import javax.annotation.PreDestroy;
  * @Version V1.0.0
  * @Since 1.0
  */
-@Component
+//@Component
 public class User {
 
     public User() {

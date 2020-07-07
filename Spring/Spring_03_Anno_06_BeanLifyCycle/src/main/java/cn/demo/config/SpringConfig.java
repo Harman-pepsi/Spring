@@ -64,8 +64,8 @@ import org.springframework.context.annotation.Configuration;
 )
 public class SpringConfig {
 
-//    @Bean(initMethod = "init",destroyMethod = "destory")
-//    public Car car(){
-//        return new Car("法拉利","红色",2990000.0d);
-//    }
+    @Bean(initMethod = "init",destroyMethod = "destory")
+    public Car car(){
+        return new Car("法拉利","红色",2990000.0d);
+    }
 }
