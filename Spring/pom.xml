@@ -12,6 +12,13 @@
         <module>Spring_01_BeanFactory</module>
         <module>Spring_02_Bean</module>
         <module>Spring_03_Anno_01_Value</module>
+        <module>Spring_03_Anno_02_Configuration</module>
+        <module>Spring_03_Anno_03_Conditional</module>
+        <module>Spring_03_Anno_04_Import</module>
+        <module>Spring_03_Anno_05_FactoryBean</module>
+        <module>Spring_03_Anno_06_BeanLifyCycle</module>
+        <module>Spring_03_Anno_07_AutoWired</module>
+        <module>Spring_03_Anno_08_Profile</module>
     </modules>
 
     <dependencies>
