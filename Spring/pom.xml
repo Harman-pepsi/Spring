@@ -19,6 +19,10 @@
         <module>Spring_03_Anno_06_BeanLifyCycle</module>
         <module>Spring_03_Anno_07_AutoWired</module>
         <module>Spring_03_Anno_08_Profile</module>
+        <module>Spring_04_Aop_01_Proxy</module>
+        <module>Spring_04_Aop_02_Aop</module>
+        <module>Spring_04_Aop_03_AdviceType</module>
+        <module>Spring_04_Anno_01_Aspect</module>
     </modules>
 
     <dependencies>
@@ -48,6 +52,18 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/cglib/cglib -->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.5</version>
         </dependency>
     </dependencies>
 
