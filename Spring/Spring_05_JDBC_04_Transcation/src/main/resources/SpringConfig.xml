@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <context:property-placeholder location="classpath:db.properties"/>
+
+    <bean id="accountService" class="cn.demo.service.impl.AccountServiceImpl">
+        <property name="accountDao" ref="accountDao"/>
+    </bean>
+
+    <bean id="accountDao" class="cn.demo.dao.impl.AccountDaoImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.DriverManagerDataSource">
+        <property name="driverClass" value="${jdbc.driver}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="user" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!-- Spring中基于xml的声明式事务控制配置步骤
+       1、配置事务管理器
+       2、配置事务通知
+           导入约束
+           使用tx:advice标签配置事务
+               属性:
+                   id:给事务通知起一个唯一的名称
+                   transcation-manager:给事务通知提供一个事务管理器引用
+       3、配置AOP中的通过切入点表达式
+       4、建立事务通知和切入点表达式
+       5、配置事务的属性
+           是在事务的通知tx:advice标签的内部
+   -->
+    <!-- 配置事务管理器 -->
+    <bean id="transcation" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <tx:advice id="txAdvice" transaction-manager="transcation">
+        <!--
+        事务传播行为类型            说明
+
+        PROPAGATION_REQUIRED        如果当前没有事务，就新建一个事务，如果已经存在一个事务中，加入到这个事务中。这是最常见的选择。
+
+        PROPAGATION_SUPPORTS        支持当前事务，如果当前没有事务，就以非事务方式执行。
+
+        PROPAGATION_MANDATORY       使用当前的事务，如果当前没有事务，就抛出异常。
+
+        PROPAGATION_REQUIRES_NEW    新建事务，如果当前存在事务，把当前事务挂起。
+
+        PROPAGATION_NOT_SUPPORTED   以非事务方式执行操作，如果当前存在事务，就把当前事务挂起。
+
+        PROPAGATION_NEVER           以非事务方式执行，如果当前存在事务，则抛出异常。
+
+        PROPAGATION_NESTED          如果当前存在事务，则在嵌套事务内执行。如果当前没有事务，则执行与PROPAGATION_REQUIRED类 似的操作。
+        -->
+
+        <!-- 配置事务的属性
+            isolation:用于指定事务的隔离级别。默认为DEFAULT,表示使用数据库默认隔离级别
+            no-rollback-for:用于指定一个异常，当产生异常时，事务不回滚。产生其他异常时事务回滚。没有默认值。表示任何异常都回滚。
+            propagation:用于指定事务的传播行为。默认REQUIRED,表示一定会有失误，增删查改的选择，查询方法可以选择SUPPORTS
+            read-only:用于指定事务是否只读，只有查询方法才能设置为true,默认值是false,表示读写
+            rollback-for:用于指定一个异常，当产生该异常时，事务回滚，产生其他异常时，事务不回滚。没有默认值。表示任何异常都回滚。
+            timeout:用于指定事务的超时时间，默认值是-1，表示永不超时。如果指定了数值，以秒为单位。
+        -->
+        <tx:attributes>
+            <tx:method name="*" propagation="REQUIRED" read-only="false"/>
+            <tx:method name="find*" propagation="SUPPORTS" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <aop:pointcut id="pt" expression="execution(* cn.demo.service.impl.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pt"/>
+    </aop:config>
+
+</beans>
