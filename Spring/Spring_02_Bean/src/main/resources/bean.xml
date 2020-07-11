@@ -23,13 +23,15 @@
    <bean id="beanFactory" class="cn.demo.factory.BeanFactory"></bean>
    <bean id="accountService" factory-bean="beanFactory" factory-method="getAccountService"></bean>
 
-   -->
+    -->
+
 
     <!-- 第三种方式 使用工厂中的静态方法进行创建(或者使用某个类中的静态方法进行创建，并存入spring容器)
 
    <bean id="accountService" class="cn.demo.factory.BeanFactory" factory-method="getAccountService"/>
 
     -->
+
 
     <!-- bean的作用域范围
    bean的标签scope属性:
@@ -131,45 +133,46 @@
 <!--        <property name="birthday" ref="now"></property>-->
 <!--    </bean>-->
 
-    <bean id="accountService" class="cn.demo.service.impl.AccountServiceImplOfOtherType">
-        <!-- String[]-->
-        <property name="str_Array">
-           <array>
-               <value>AAA</value>
-               <value>BBB</value>
-               <value>CCC</value>
-           </array>
-        </property>
-        <property name="list">
-            <list>
-                <value>AAA</value>
-                <value>BBB</value>
-                <value>CCC</value>
-            </list>
-        </property>
-        <property name="set">
-            <set>
-                <value>AAA</value>
-                <value>BBB</value>
-                <value>CCC</value>
-            </set>
-        </property>
-        <property name="map">
-            <map>
-                <entry key="1" value="AAA"></entry>
-                <entry key="2" value="BBB"></entry>
-                <entry key="3" value="CCC"></entry>
-            </map>
-        </property>
-        <property name="properties">
-            <props>
-                <prop key="jdbc.driver">com.mysql.cj.jdbc.Driver</prop>
-                <prop key="jdbc.url">jdbc:mysql://localhost:3306/xxx?serverTimezone=GMT%2B8</prop>
-                <prop key="jdbc.username">root</prop>
-                <prop key="jdbc.password">123456</prop>
-            </props>
-        </property>
-    </bean>
+
+<!--    <bean id="accountService" class="cn.demo.service.impl.AccountServiceImplOfOtherType">-->
+<!--        &lt;!&ndash; String[]&ndash;&gt;-->
+<!--        <property name="str_Array">-->
+<!--           <array>-->
+<!--               <value>AAA</value>-->
+<!--               <value>BBB</value>-->
+<!--               <value>CCC</value>-->
+<!--           </array>-->
+<!--        </property>-->
+<!--        <property name="list">-->
+<!--            <list>-->
+<!--                <value>AAA</value>-->
+<!--                <value>BBB</value>-->
+<!--                <value>CCC</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="set">-->
+<!--            <set>-->
+<!--                <value>AAA</value>-->
+<!--                <value>BBB</value>-->
+<!--                <value>CCC</value>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--        <property name="map">-->
+<!--            <map>-->
+<!--                <entry key="1" value="AAA"></entry>-->
+<!--                <entry key="2" value="BBB"></entry>-->
+<!--                <entry key="3" value="CCC"></entry>-->
+<!--            </map>-->
+<!--        </property>-->
+<!--        <property name="properties">-->
+<!--            <props>-->
+<!--                <prop key="jdbc.driver">com.mysql.cj.jdbc.Driver</prop>-->
+<!--                <prop key="jdbc.url">jdbc:mysql://localhost:3306/xxx?serverTimezone=GMT%2B8</prop>-->
+<!--                <prop key="jdbc.username">root</prop>-->
+<!--                <prop key="jdbc.password">123456</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+<!--    </bean>-->
 
 
 </beans>

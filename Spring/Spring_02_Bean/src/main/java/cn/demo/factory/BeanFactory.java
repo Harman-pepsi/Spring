@@ -22,4 +22,5 @@ public class BeanFactory {
     public static IAccountService getAccountService(){
         return new AccountServiceImpl();
     }
+
 }
