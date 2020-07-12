@@ -27,6 +27,8 @@
         <module>Spring_05_JDBC_02_C3P0</module>
         <module>Spring_05_JDBC_03_C3p0Anno</module>
         <module>Spring_05_JDBC_04_Transcation</module>
+        <module>Spring_05_JDBC_05_TranscationWithThreadLoacl</module>
+        <module>Spring_05_JDBC_05_TranscationWithThreadLoaclAnno</module>
     </modules>
 
     <dependencies>
