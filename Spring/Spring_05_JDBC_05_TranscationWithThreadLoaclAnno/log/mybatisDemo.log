@@ -1,0 +1,40 @@
+[INFO] [20-07-13] [com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+[INFO] [20-07-13] [com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+[INFO] [20-07-13] [com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+[INFO] [20-07-13] [com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.log.MLog]The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+[DEBUG] [20-07-13] [com.mchange.v2.cfg.MConfig]The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
