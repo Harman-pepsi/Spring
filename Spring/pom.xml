@@ -29,6 +29,7 @@
         <module>Spring_05_JDBC_04_Transcation</module>
         <module>Spring_05_JDBC_05_TranscationWithThreadLoacl</module>
         <module>Spring_05_JDBC_05_TranscationWithThreadLoaclAnno</module>
+        <module>Spring_06_Anno_01_Aop</module>
     </modules>
 
     <dependencies>
